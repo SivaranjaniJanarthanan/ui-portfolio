@@ -16,6 +16,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    margin-bottom: 5px;
 }
 .hero{
     width: 100%;
@@ -114,14 +115,28 @@ dd {
     margin-left: 8%;
     margin-top: 5%;
     margin-right: 7%;
+    margin-bottom: 10px;
 }
 .heading {
     font-size: 25px;
-    color: red;
+    color: white;
     text-shadow: 1px 2px;
     font-style: italic;
     margin-bottom: 15px;
     margin-top: 15px;
+    border: 2px solid red;
+    padding: 5px;
+    border-radius: 2em 1em 4em / 0.5em 3em;
+    background-color: rgba(255, 99, 71, 0.5);
+}
+.heading1 {
+    font-size: 25px;
+    color: rgba(255, 99, 71, 0.5);
+    text-shadow: 1px 2px;
+    font-style: italic;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    list-style: none;
 }
 table {
   font-family: arial, sans-serif;
@@ -138,13 +153,33 @@ td, th {
 tr:nth-child(even) {
   background-color: rgba(255, 99, 71, 0.5);
 }
-        
+* {box-sizing: border-box}
+
+.rating {
+  width: 30%;
+  background-color: rgba(255, 99, 71, 0.5);
+}
+
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.html {width: 90%; background-color: #04AA6D;}
+.css {width: 80%; background-color: #2196F3;}
+.js {width: 65%; background-color: #f44336;}
+.php {width: 60%; background-color: #808080;}  
+
+
+
 </style>
 <body>
 
     <div class="hero">
         <nav>  
-            <ul>
+            <ul style="margin-left: -15px;">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -185,8 +220,8 @@ tr:nth-child(even) {
         organization based on my personal capabilities by learning from the new exposure
         within the structured frame of work.</p>
     <h2 class="heading">WORK EXPERIENCE</h2>
-    <h6 class="heading">Assistant System Engineer Trainee(Talent Takeaways Consulting India Pvt. Ltd.)</h6>
-        <ul type="square">
+    <h6 class="heading1">Assistant System Engineer Trainee(Talent Takeaways Consulting India Pvt. Ltd.)</h6>
+        <ul style="margin-left: 14px;" type="square">
                     <li>Creating and modifying features with keeping in mind cross-browser compatibility and mobile compatibility.</li>
                     <li>Create a restful API for an eCommerce project. Add/update/delete/read products and search for products.</li>
                     <li>Worked with designers, front-end and project management staff to capture requirements for the functional elements of projects.</li>
@@ -194,6 +229,64 @@ tr:nth-child(even) {
                     <li>Involved in preparing user acceptance quality documents and troubleshooting.</li>
                     <li>Experienced in front-end MVC web applications using bootstrap. Js, html, css, javascript.</li>
         </ul>
+            <h1 class="heading">TECHNICAL EXPERTISE</h1>
+            <ol>
+                <li class="heading1">HTML Semantic Elements</li>
+                    <ul style="margin-left: 15px;" type="square">
+                                <li>aside</li>
+                                <li>article</li>
+                                <li>dialog</li>
+                                <li>figure</li>
+                                <li>header</li>
+                                <li>footer</li>
+                    </ul>
+                <li class="heading1">Forms and Validation</li>
+                    <ul style="margin-left: 15px;" type="square">
+                        <li>Tabel Element</li>
+                        <li>tabel Attribute</li>
+                        </li>
+                    </ul>
+                <li class="heading1">Navigation</li>
+                    <ul style="margin-left: 15px;" type="square">
+                        <li>Inter Document</li>
+                        <li>Intra Document</li>
+                        </li>
+                    </ul>
+                <li class="heading1">CSS</li>
+                    <ul style="margin-left: 15px;" type="square">
+                        <li>Box Model</li>
+                        <li>Responsive</li>
+                        <li>Media</li>
+                        <li>Keyframes</li>
+                        <li>Animation</li>
+                        </li>
+                    </ul>
+            </ol>
+        <h1 class="heading">FLUENT LANGUAGES</h1>
+            <p>English, Hindi &amp; anyother</p>
+        <h1 class="heading">PERSONAL INFORMATION</h1>
+            <p>Date of Birth: 17-06-1994</p>
+        <h1 class="heading">My Skills</h1>
+
+        <p>HTML</p>
+        <div class="rating">
+          <div class="skills html">90%</div>
+        </div>
+        
+        <p>CSS</p>
+        <div class="rating">
+          <div class="skills css">80%</div>
+        </div>
+        
+        <p>JavaScript</p>
+        <div class="rating">
+          <div class="skills js">65%</div>
+        </div>
+        
+        <p>PHP</p>
+        <div class="rating">
+          <div class="skills php">60%</div>
+        </div>
         <h2 class="heading">EDUCATION</h2>
         <table>
             <tr>
